@@ -1,0 +1,16 @@
+.todolist >* {
+  margin-bottom: 40px;
+}
+
+.todolist {  
+}
+
+.todo-add-animation {
+  transform: translateY(100px);
+  transition: all 0.3s;
+}
+
+.todo-unadd-animation {
+  transform: translateY(0);
+  transition: all 0;
+}

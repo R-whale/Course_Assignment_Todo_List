@@ -1,0 +1,62 @@
+.todo-item {
+  animation: fade-in ease-out 1s;
+  max-width: 80%;
+  width: 500px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  transition: all 0.2s;
+  margin: 0 auto;
+  position: relative;
+}
+
+.todo-time {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  transform: translateY(-100%);
+  font-size: x-small;
+  color: #aaa;
+}
+
+.todo-content {
+  flex: 1;
+  height: 20px;
+  padding: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: medium;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background: none;
+}
+
+.todo-aside {
+  padding: 0 10px;
+  height: 60px;
+  display: flex;
+}
+.todo-aside >img {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.todo-aside >img:hover {
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

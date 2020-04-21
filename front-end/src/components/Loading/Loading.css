@@ -1,0 +1,48 @@
+.loading-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+}
+
+.loading-box {
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  background-color: #ddd;
+  border-radius: 30px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+}
+
+.loading-circle {
+  animation: rotating 2s infinite;
+  width: 50px;
+  height: 50px;
+  border: solid 4px #777;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+.loading-circle:after {
+  content: '';
+  width: 40px;
+  height: 10px;
+  position: absolute;
+  background-color: #ddd;
+  left: 5px;
+  top: -4px;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
